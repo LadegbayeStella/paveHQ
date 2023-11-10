@@ -1,0 +1,349 @@
+/* import { motion } from "framer-motion" */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav bar section */
+html,
+body {
+    height: 100%;
+}
+
+nav {
+    /* height: 75px; */
+    border: 1px solid;
+    padding: -5px 7%;
+    z-index: 100;
+    background: transparent;
+    box-shadow: 5px 1px #888888;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100%;
+    margin-top: -1rem;
+}
+
+
+ul>label {
+    margin-right: auto;
+}
+
+ul>button {
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    margin: 2rem;
+    margin-top: 2rem;
+    color: #042B43;
+}
+
+ul li a {
+    text-transform: uppercase;
+    transition: all ease 0.55;
+    font-size: 17px;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    border-bottom: #edf2f3 solid 3px;
+
+}
+
+
+.logo {
+    display: none;
+    padding: 1rem;
+
+}
+
+/* main section start here */
+
+main {
+    overflow: hidden;
+    padding: 5rem 12%;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.image-section {
+    flex: 1;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    main.hero-section {
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
+    }
+
+    .hero-text,
+    .image-section {
+        flex: none;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .image-section {
+        max-width: 100%;
+    }
+
+    .image-section img {
+        width: 100%;
+        transform: scale(1.2);
+    }
+
+    .hero-section .hero-text h1 {
+        font-weight: 600;
+        font-size: 40px;
+        /* line-height: 1.3; */
+        /* margin: 22px 0; */
+    }
+
+    /* section */
+    .section {
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .content1 img {
+        width: 60px;
+        height: 80px;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        margin: 1rem;
+    }
+
+    .content1 .content-count .amount {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1;
+        margin: 22px 0;
+        color: #042B43;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
+    .hero-section .hero-text h1 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.5;
+        margin: 22px 0;
+    }
+}
+
+
+.hero-section .hero-text h1 span {
+    color: #FFD248;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero-section .hero-text h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 22px 0;
+}
+
+
+.hero-section .hero-text a {
+    display: inline-block;
+    background-color: #042B43;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+/* navbar responsiveness */
+@media (max-width:768px) {
+    ul {
+        display: none;
+    }
+
+    ul button {
+        display: none;
+    }
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo i {
+        margin-left: auto;
+    }
+
+    .course-categories center h1 {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 1;
+        margin: 22px 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+
+/* section start from here */
+
+section {
+    overflow: hidden;
+    padding: 0 12%;
+    margin: 2rem;
+    max-width: 100%;
+}
+
+.section-content {
+    background-color: #caf3f3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 4rem;
+    padding: 15px;
+    max-width: 100%;
+    /* margin: 6%; */
+}
+
+.section-content .content1 {
+    background-color: #caf3f3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.content1 img {
+    width: 80px;
+    height: 80px;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin: 2rem;
+}
+
+.content1 .content-count .amount {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1;
+    margin: 22px 0;
+    color: #16b6b8;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.content1 .content-count .text {
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 1;
+    margin: 22px 0;
+    color: rgb(195, 191, 191);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.course-categories center {
+    margin: 2rem 0;
+}
+
+.course-categories center h1 {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 22px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span {
+    color: #042B43;
+    font-weight: 600;
+}
+
+
+.courses {}
+
+
+
+/* .courses .course1{
+    width: 50%;
+    background-color: #edf2f3;
+
+} */
+
+
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 3rem;
+    padding:0 12%;
+}
+
+.course1 {
+    flex: 1;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.course1 i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin: 10px;
+    /* Add some spacing between the items */
+    /* max-width: calc(33.33% - 20px); */
+}
+
+/* section about us */
+
+
+
+.image-container div img {
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust styles for screens smaller than 768px width */
+    .course1 {
+        /* max-width: calc(50% - 20px); */
+        /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Adjust styles for screens smaller than 480px width */
+    .course1 {
+        /* max-width: 100%; */
+        /* One column on very small screens */
+    }
+}
