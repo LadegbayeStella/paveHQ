@@ -12,8 +12,7 @@ body {
     height: 100%;
 }
 
-nav {
-    /* height: 75px; */
+/* .nav {
     border: 1px solid;
     padding: -5px 7%;
     z-index: 100;
@@ -63,7 +62,7 @@ ul li a:hover {
     display: none;
     padding: 1rem;
 
-}
+} */
 
 /* main section start here */
 
